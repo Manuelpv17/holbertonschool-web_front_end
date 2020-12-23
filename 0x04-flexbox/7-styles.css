@@ -404,7 +404,6 @@ ul.row {
         ============================= */
 
 .header {
-  align-items: center;
   padding: var(--header-padding);
   position: relative;
   z-index: 3;
@@ -414,6 +413,7 @@ ul.row {
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Footer
