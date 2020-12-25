@@ -1,38 +1,46 @@
+:root {
+  --level1: 1rem;
+  --level2: 3rem;
+  --level3: 5rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  align-items: baseline;
 }
 
 .box {
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  width: 3em;
+  height: 1.5em;
 }
+
 .box1 {
-  background-color: violet;
-  width: 100px;
-  height: 80px;
+  background-color: teal;
+  font-size: var(--level1);
 }
 
 .box2 {
   background-color: tomato;
-  width: 120px;
-  height: 100px;
+  font-size: var(--level2);
 }
+
 .box3 {
-  background-color: teal;
-  width: 140px;
-  height: 120px;
-}
-.box4 {
+  font-size: var(--level3);
   background-color: turquoise;
-  width: 120px;
-  height: 100px;
 }
+
+.box4 {
+  font-size: var(--level2);
+  background-color: violet;
+}
+
 .box5 {
+  font-size: var(--level1);
   background-color: yellowgreen;
-  width: 100px;
-  height: 80px;
 }
