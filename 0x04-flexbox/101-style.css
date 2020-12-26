@@ -44,3 +44,9 @@
   font-size: var(--level1);
   background-color: yellowgreen;
 }
+
+.box1,
+.box5 {
+  width: 4.5em;
+  height: 2.5em;
+}
