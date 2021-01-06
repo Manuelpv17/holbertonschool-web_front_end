@@ -816,7 +816,7 @@ ul.row {
 /* Basic form
     ============================= */
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
