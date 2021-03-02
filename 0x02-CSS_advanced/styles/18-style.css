@@ -149,6 +149,10 @@ h6 {
   text-align: center;
 }
 
+.navbar-menu {
+  float: right;
+}
+
 .nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
