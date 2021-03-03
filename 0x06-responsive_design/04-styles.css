@@ -321,6 +321,11 @@ a:active {
 /* Helpers
       ============================= */
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
@@ -364,6 +369,28 @@ ul.row {
 
 .col-1-2 {
   width: calc((100% / 2) - 2rem);
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --section-padding: 5rem 1.5rem;
+    --section-body-padding: 2rem 0 0;
+  }
+
+  .row,
+  ul.row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  [class*="col-"] {
+    margin: 0 0 3rem 0;
+  }
+
+  .col-1-3,
+  .col-1-2 {
+    width: 100%;
+  }
 }
 
 /* Navbar
@@ -567,8 +594,10 @@ ul.row {
 /* Section Latest news
       ============================= */
 
-.section-latest-news .row {
-  flex-direction: row-reverse;
+@media screen and (max-width: 767px) {
+  .section-latest-news .row {
+    flex-direction: column;
+  }
 }
 
 /* Section SERVICES
